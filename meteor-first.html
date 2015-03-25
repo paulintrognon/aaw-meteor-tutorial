@@ -1,0 +1,33 @@
+<head>
+  <title>Todo List</title>
+</head>
+
+<body>
+<div class="container">
+  <header>
+    <h1>AAW tuto</h1>
+  </header>
+
+  {{> board}}
+</div>
+</body>
+
+<template name="board">
+  <table>
+    {{#each squares}}
+      <tr>
+        {{#each this}}
+          <td>
+            {{> square}}
+          </td>
+        {{/each}}
+      </tr>
+    {{/each}}
+  </table>
+</template>
+
+<template name="square">
+  <div class="square {{name}}">
+
+  </div>
+</template>
