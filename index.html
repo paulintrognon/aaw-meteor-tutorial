@@ -13,9 +13,16 @@
 </body>
 
 <template name="board">
-  <div id="board">
+  <div class="board">
     {{#each squares}}
-      <div>{{pos.x}} ; {{pos.y}} ; {{terrain.name}}</div>
+      {{> square}}
     {{/each}}
+  </div>
+</template>
+
+<template name="square">
+  <div class="square {{terrain.name}}"
+       style="top: {{getY}}px;left: {{getX}}px;">
+
   </div>
 </template>
