@@ -24,5 +24,14 @@
   <div class="square {{terrain.name}}"
        style="top: {{getY}}px;left: {{getX}}px;">
 
+    {{#if soldier_id}}
+      {{> soldier}}
+    {{/if}}
+  </div>
+</template>
+
+<template name="soldier">
+  <div class="soldier">
+    <img src="/img/ak47.gif" alt="ak47" />
   </div>
 </template>

@@ -1,4 +1,5 @@
 Squares = new Mongo.Collection('squares');
+Soldiers = new Mongo.Collection('soldiers');
 
 if (Meteor.isClient) {
   Template.board.helpers({

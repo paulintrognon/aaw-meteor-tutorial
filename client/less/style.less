@@ -1,12 +1,13 @@
 @squareWidth: 50px;
+@squaresNb: 9;
 
 .board {
   position: relative;
   border-collapse: collapse;
   background-color: #333333;
   border: solid 3px #333333;
-  width: @squareWidth * 10;
-  height: @squareWidth * 10;
+  width: @squareWidth * @squaresNb;
+  height: @squareWidth * @squaresNb;
 }
 
 .square {
