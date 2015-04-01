@@ -8,10 +8,10 @@ if (Meteor.isClient) {
 
   Template.square.helpers({
     getX: function () {
-      return this.pos.x * 50;
+      return this.pos.x * 51;
     },
     getY: function () {
-      return this.pos.y * 50;
+      return this.pos.y * 51;
     }
   });
 }
